@@ -1,31 +1,22 @@
 $("#register").click(function(){
+	var btn = $('#mybtns').html();
+	$('#mybtns').html('<img src="images/ajax-loader.gif" alt="loading">');
 	var Email = $('#Email').val();
 	var Password = $('#Password').val();
 	var ConfirmPassword = $('#ConfirmPassword').val();
-	var data = { 'Email': Email, 'Password': Password };
-	/*$('form').submit(function(){
-	var landmarkID = $(this).parent().attr('data-landmark-id');
-	var postData = $(this).serialize();
-	
 	$.ajax({
 		type: 'POST',
-		data: postData+'&amp;lid='+landmarkID,
-		url: 'http://your-domain.com/comments/save.php',
+		data: '&Email='+Email+'&Password='+Password,
+		url: serviceURL + 'mobile/register.php',
 		success: function(data){
-			console.log(data);
-			alert('Your comment was successfully added');
+			$('#mybtns').html(btn);
+			$('#Email').val("");
+			$('#Password').val("");
+			$('#ConfirmPassword').val("");
+			$('#errorMessage').html("You have successfully registered with us. Please check your email.");
 		},
 		error: function(){
-			console.log(data);
-			alert('There was an error adding your comment');
 		}
 	});
-	
-	return false;
-});*/
 
-	$.getJSON(serviceURL + 'mobile/register.php', function(res) {
-		alert(res);
-	});
-	
 });
