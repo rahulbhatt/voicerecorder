@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Voice Messanger</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+    
+<body>
+        
+<div id="employeeListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Register</h1>
+	</div>
+
+	<div data-role="content">
+         <form id="loginForm" data-ajax="false">
+            <label id="errorMessage"></label>
+            <div data-role="fieldcontain">
+                <label for="username">Email:</label>
+                <input id="username" type="text" placeholder="Email" />
+            </div><!-- End Contained Fields -->
+            <div data-role="fieldcontain">
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="Password" />
+            </div><!-- End Contained Fields -->
+            <div data-role="fieldcontain">
+                <label for="password">Confirm Password:</label>
+                <input id="confirmpassword" type="password" placeholder="Confirm Password" />
+            </div><!-- End Contained Fields -->
+            <div data-role="fieldcontain">
+                <input type="submit" id="login" value="Login" />
+            </div><!-- End Contained Fields -->
+         </form>
+    </div>		
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/config.js"></script>
+</body>
+
+</html>
