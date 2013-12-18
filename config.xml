@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.dswtechnologies.audiorecorder"
+        versioncode = "1"
+        version   = "0.0.1">
+    <name>Voice Messanger</name>
+    <icon src="icon.png"/>
+    <content src="index.html"/>
+    <description>
+      receive voice messages from your audience directly on your mobile.
+    </description>
+    <author href="http://dswtechnologies.com/" email="rahul@dswtpl.com">
+        dswtechnologies
+    </author>
+        
+    <preference name="phonegap-version" value="2.9.0" />
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/file"/> 
+	<feature name="http://api.phonegap.com/1.0/network"/>      
+
+    <!-- for Android -->
+    <preference name="android-minSdkVersion" value="9" />
+	
+	<access origin="*" subdomains="true" />
+</widget>
