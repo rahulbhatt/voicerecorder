@@ -20,7 +20,7 @@
 
     <!-- for Android -->
     <preference name="android-minSdkVersion" value="9" />
-	<access origin="http://180.211.104.123/www/emp1/speakpipe/" subdomains="true" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	
+	<access origin="http://180.211.104.123/www/emp1/speakpipe/" subdomains="true" />
 </widget>
