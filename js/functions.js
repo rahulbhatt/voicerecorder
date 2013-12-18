@@ -5,9 +5,11 @@ $("#register").click(function(){
 	var Password = $('#Password').val();
 	var ConfirmPassword = $('#ConfirmPassword').val();
 	$.ajax({
-		type: 'POST',
+		async: false,
+		type: 'GET',
 		data: '&Email='+Email+'&Password='+Password,
 		url: serviceURL + 'mobile/register.php',
+		dataType: "json",
 		success: function(data){
 			$('#mybtns').html(btn);
 			$('#Email').val("");
