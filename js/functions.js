@@ -1,10 +1,15 @@
 $("#register").click(function(){
-	var btn = $('#mybtns').html();
-	$('#mybtns').html('<img src="images/ajax-loader.gif" alt="loading">');
+	//var btn = $('#mybtns').html();
+	//$('#mybtns').html('<img src="images/ajax-loader.gif" alt="loading">');
 	var Email = $('#Email').val();
 	var Password = $('#Password').val();
 	var ConfirmPassword = $('#ConfirmPassword').val();
-	$.ajax({
+	$.getJSON(serviceURL + 'mobile/register.php', function(data) {
+			$('#Email').val("");
+			$('#Password').val("");
+			$('#ConfirmPassword').val("");
+	});
+	/*$.ajax({
 		async: false,
 		type: 'POST',
 		data: '&Email='+Email+'&Password='+Password,
@@ -19,6 +24,6 @@ $("#register").click(function(){
 		},
 		error: function(){
 		}
-	});
+	});*/
 
 });
