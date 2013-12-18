@@ -4,12 +4,13 @@ $("#register").click(function(){
 	var Email = $('#Email').val();
 	var Password = $('#Password').val();
 	var ConfirmPassword = $('#ConfirmPassword').val();
-	$.getJSON(serviceURL + 'mobile/register.php', function(data) {
+	alert(serviceURL);
+	/*$.getJSON(serviceURL + 'mobile/register.php', function(data) {
 			$('#Email').val("");
 			$('#Password').val("");
 			$('#ConfirmPassword').val("");
 	});
-	/*$.ajax({
+	$.ajax({
 		async: false,
 		type: 'POST',
 		data: '&Email='+Email+'&Password='+Password,
