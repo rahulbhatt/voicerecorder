@@ -20,4 +20,6 @@
 
     <!-- for Android -->
     <preference name="android-minSdkVersion" value="9" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
 </widget>
