@@ -6,7 +6,7 @@ $("#register").click(function(){
 	var ConfirmPassword = $('#ConfirmPassword').val();
 	$.ajax({
 		async: false,
-		type: 'GET',
+		type: 'POST',
 		data: '&Email='+Email+'&Password='+Password,
 		url: serviceURL + 'mobile/register.php',
 		dataType: "json",
