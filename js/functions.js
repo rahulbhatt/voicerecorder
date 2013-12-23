@@ -1,4 +1,5 @@
 $("#register").click(function(){
+	alert("Hi");
 	//var btn = $('#mybtns').html();
 	//$('#mybtns').html('<img src="images/ajax-loader.gif" alt="loading">');
 	var Email = $('#Email').val();
