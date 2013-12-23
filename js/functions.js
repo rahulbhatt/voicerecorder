@@ -5,12 +5,12 @@ $("#register").click(function(){
 	var Password = $('#Password').val();
 	var ConfirmPassword = $('#ConfirmPassword').val();
 	alert(serviceURL);
-	/*$.getJSON(serviceURL + 'mobile/register.php', function(data) {
+	$.getJSON(serviceURL + 'mobile/register.php?Email='+Email+'&Password='+Password, function(data) {
 			$('#Email').val("");
 			$('#Password').val("");
 			$('#ConfirmPassword').val("");
 	});
-	$.ajax({
+	/*$.ajax({
 		async: false,
 		type: 'POST',
 		data: '&Email='+Email+'&Password='+Password,
