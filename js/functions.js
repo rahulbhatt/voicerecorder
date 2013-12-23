@@ -1,3 +1,15 @@
+$( document ).bind( "mobileinit", function() {
+    $.support.cors=true;
+	$.mobile.allowCrossDomainPages = true;
+	$.mobile.pushStateEnabled = false;
+	$.mobile.touchOverflowEnabled = false;
+	$.mobile.defaultPageTransition = 'slide';
+	$.mobile.defaultDialogTransition = 'pop';
+	$.mobile.transitionFallbacks.slide = 'none';
+	$.mobile.transitionFallbacks.pop = 'none';
+	$.mobile.buttonMarkup.hoverDelay = 0;
+	$.mobile.phonegapNavigationEnabled = true;
+});
 function register(){
 	alert("Hi");
 	//var btn = $('#mybtns').html();
