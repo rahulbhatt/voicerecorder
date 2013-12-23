@@ -1,4 +1,4 @@
-$("#register").click(function(){
+function register(){
 	alert("Hi");
 	//var btn = $('#mybtns').html();
 	//$('#mybtns').html('<img src="images/ajax-loader.gif" alt="loading">');
@@ -11,6 +11,9 @@ $("#register").click(function(){
 			$('#Password').val("");
 			$('#ConfirmPassword').val("");
 	});
+}
+$("#register").click(function(){
+	
 	/*$.ajax({
 		async: false,
 		type: 'POST',
